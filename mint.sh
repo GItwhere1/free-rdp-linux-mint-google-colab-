@@ -3,8 +3,8 @@ unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Paste authtoken here https://dashboard.ngrok.com/get-started/your-authtoken (Copy and Ctrl+V to paste then press Enter): " CRP
 ./ngrok authtoken $CRP
 echo region
-read -p "region: " region
-nohup ./ngrok tcp -region $region 5900 &>/dev/null &
+read -p "region: " dick
+nohup ./ngrok tcp -region $dick 5900 &>/dev/null &
 mkdir mint
 cd mint
 echo update
