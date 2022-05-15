@@ -11,7 +11,7 @@ echo update
 sudo apt update -y > /dev/null 2>&1
 echo install qemu
 sudo apt install qemu-system-x86 curl -y > /dev/null 2>&1
-echo install windows 10 iso
+echo install mint iso
 wget https://mirrors.layeronline.com/linuxmint/stable/20.3/linuxmint-20.3-cinnamon-64bit.iso
 echo making disk
 qemu-img create mint.vdi 100G
