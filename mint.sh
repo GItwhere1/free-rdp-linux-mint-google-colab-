@@ -2,7 +2,7 @@ wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip > /dev/nu
 unzip ngrok-stable-linux-amd64.zip > /dev/null 2>&1
 read -p "Paste authtoken here https://dashboard.ngrok.com/get-started/your-authtoken (Copy and Ctrl+V to paste then press Enter): " CRP
 ./ngrok authtoken $CRP
-echo region us, eu, au, ap, sa, jp, in.
+echo region us, eu, au, ap, sa, jp,
 read -p "region: " region
 nohup ./ngrok tcp -region $region 5900 &>/dev/null &
 mkdir mint
